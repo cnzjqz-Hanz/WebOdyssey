@@ -1,0 +1,19 @@
+[data-md-color-scheme="mycolor"] {
+    --md-primary-fg-color:        #002FA7;
+    --md-primary-fg-color--light: #81D8CF;
+    --md-primary-fg-color--dark:  #003152;
+}
+
+@font-face {
+    font-family: "Caslon";
+    src: url("../fonts/Caslon.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Trajan";
+    src: url("../fonts/Trajan.otf") format("opentype");
+}
+
+.md-grid {
+    max-width: 1200px; 
+}
