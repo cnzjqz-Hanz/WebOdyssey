@@ -1,0 +1,76 @@
+site_name: A Catcher in His Odyssey
+theme:
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      scheme : mycolor
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme : mycolor
+      toggle : 
+        icon: material/eye
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme : slate
+      primary: black
+      accent : black
+      toggle : 
+        icon: material/eye-outline
+        name: Switch to light mode
+  font:
+    text: "Libre Caslon Text"
+    code: "Inconsolata"
+  language: en
+  logo: images/logo.jpeg
+  favicon: images/favicon.jpeg
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    
+nav:
+  - Home:
+    - navs/home/index.md
+  - Blog:
+    - blog/index.md
+
+plugins:
+  - search
+  - blog
+
+extra: 
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cnzjqz-Hanz
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/john.zhen.5686/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/messique666/
+    - icon: fontawesome/brands/spotify
+      link: https://open.spotify.com/
+      name: Spoony Fuze
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:1207452173@qq.com
+
+
+copyright: Copyright &copy; 2023 - 2024 Han Zheng
+
+extra_css:
+  - stylesheets/extra.css
